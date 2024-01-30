@@ -1,0 +1,20 @@
+{
+  "name": "estudos-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "eslint": "^8.53.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
