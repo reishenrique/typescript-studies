@@ -22,7 +22,7 @@ a. Visa ocultar partes internas de um objeto e exibir apenas o necessário para 
 b. Não precisamos saber como o sinal do controle remoto chega até a TV para realizar as funções necessárias
 */
 
-export class RemoteControl {
+class RemoteControl {
   // eslint-disable-next-line no-useless-constructor
   constructor(private powerStatus: boolean = false) {}
 
@@ -39,7 +39,7 @@ export class RemoteControl {
   }
 }
 
-export class BankAccount {
+class BankAccount {
   private balance: number
 
   constructor(inicialBalance: number) {
@@ -81,25 +81,25 @@ console.log(myAccount.getBalance()) // Output: 1300
 */
 
 // Quando abstract é declarado, a classe que irá extender dela deve implementar todos os métodos declarados também
-export abstract class Animal {
+abstract class Animal {
   // eslint-disable-next-line no-useless-constructor
   constructor(public name: string) {}
   abstract makeNoise(): void
 }
 
-export class Dog extends Animal {
+class Dog extends Animal {
   makeNoise(): void {
     console.log(`${this.name} está latindo`)
   }
 }
 
-export class Cat extends Animal {
+class Cat extends Animal {
   makeNoise(): void {
     console.log(`${this.name} está miando`)
   }
 }
 
-export class Vehicle {
+class Vehicle {
   // eslint-disable-next-line no-useless-constructor
   constructor(
     public marca: string,
@@ -115,7 +115,7 @@ export class Vehicle {
   }
 }
 
-export class Car extends Vehicle {
+class Car extends Vehicle {
   constructor(
     marca: string,
     model: string,
