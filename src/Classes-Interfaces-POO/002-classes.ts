@@ -1,6 +1,6 @@
 /*
 Classes em TypeScript - Moldes para objetos
-Modificadores de acesso public, private e readonly
+Modificadores de acesso public, private, readonly e protected
 */
 
 class Collaborators {
