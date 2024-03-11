@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 // Type Guards - Refinando Tipos
 
 export function add(a: unknown, b: unknown): string | number {
@@ -73,4 +75,4 @@ const car: Car = {
 const brand: string | undefined = getProperty(car, 'brand') // Saída 'Toyota'
 const model: string | undefined = getProperty(car, 'model') // Saída: 'Corolla'
 const year: number | undefined = getProperty(car, 'year') // Saída: 2020
-const color: string | undefined = getProperty(car, 'color') // Saída: undefined, porque 'color' não é uma propriedade de Car
+// const color: string | undefined = getProperty(car, 'color') // Saída: undefined, porque 'color' não é uma propriedade de Car
