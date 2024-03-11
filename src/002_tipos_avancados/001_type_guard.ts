@@ -76,3 +76,20 @@ const brand: string | undefined = getProperty(car, 'brand') // Saída 'Toyota'
 const model: string | undefined = getProperty(car, 'model') // Saída: 'Corolla'
 const year: number | undefined = getProperty(car, 'year') // Saída: 2020
 // const color: string | undefined = getProperty(car, 'color') // Saída: undefined, porque 'color' não é uma propriedade de Car
+
+// 4. Outro exemplo utilizando o keyof
+
+const colorsObj = {
+  vermelho: 'red',
+  azul: 'blue',
+  verde: 'green',
+}
+
+type ColorsObj = typeof colorsObj
+type ColorsKey = keyof ColorsObj
+
+function translateColor(color: ColorsKey, colors: ColorsObj): string {
+  return colors[color]
+}
+
+console.log(translateColor('azul', colorsObj))
