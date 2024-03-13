@@ -11,7 +11,7 @@ console.log(primeiroNumero) // Output: 1
 
 const strings: string[] = ['um', 'dois', 'tres', 'quatro', 'cinco']
 const primeiraLetra: string | undefined = primeiroElemento(strings)
-console.log(primeiraLetra) // Outpum: 'um'
+console.log(primeiraLetra) // Output: 'um'
 
 // 2. Interface genérica para definir uma coleção de elementos do mesmo tipo
 interface Colecao<T> {
